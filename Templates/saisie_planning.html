@@ -124,25 +124,6 @@
         </select>
     </div>
 
-    <!-- Dimanche -->
-    <h3>Dimanche</h3>
-    <div class="form-group">
-        {{ formulaire.dimanche_matin.label(class="form-label") }}
-        <select name="dimanche_matin" class="form-control select2" multiple="multiple">
-            {% for value, label in formulaire.dimanche_matin.choices %}
-                <option value="{{ value }}">{{ label }}</option>
-            {% endfor %}
-        </select>
-    </div>
-    <div class="form-group">
-        {{ formulaire.dimanche_soir.label(class="form-label") }}
-        <select name="dimanche_soir" class="form-control select2" multiple="multiple">
-            {% for value, label in formulaire.dimanche_soir.choices %}
-                <option value="{{ value }}">{{ label }}</option>
-            {% endfor %}
-        </select>
-    </div>
-
     <div class="form-group">
         {{ formulaire.submit(class="btn-submit") }}
     </div>
