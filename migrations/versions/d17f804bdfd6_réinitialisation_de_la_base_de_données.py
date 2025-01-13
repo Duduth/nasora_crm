@@ -1,8 +1,8 @@
-"""Ajout de la colonne activite à la table planning
+"""Réinitialisation de la base de données
 
-Revision ID: bbb84d3d5cc9
+Revision ID: d17f804bdfd6
 Revises: 
-Create Date: 2025-01-12 19:49:30.756679
+Create Date: 2025-01-13 22:53:13.928123
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'bbb84d3d5cc9'
+revision = 'd17f804bdfd6'
 down_revision = None
 branch_labels = None
 depends_on = None

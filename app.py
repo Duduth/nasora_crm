@@ -18,11 +18,10 @@ from forms import PlanningForm
 from models import db, User, Prospection, NovaPharmaProduct, GilbertProduct, EricFavreProduct, TroisCheneProduct, NovaPharmaSale, GilbertSale, EricFavreSale, TroisCheneSale
 
 app = Flask(__name__)
-app.secret_key = 'votre_cle_secrete'
+app.config['SECRET_KEY'] = 'votre_cle_secrete'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///plateforme_commerciale.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['CACHE_TYPE'] = 'SimpleCache'
-app.config['CACHE_DEFAULT_TIMEOUT'] = 300
+app.config['DEBUG'] = False
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)

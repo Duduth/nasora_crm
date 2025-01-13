@@ -49,6 +49,8 @@ class PlanningForm(FlaskForm):
     vendredi_soir = SelectMultipleField('Vendredi Soir', choices=STRUCTURES)
     samedi_matin = SelectMultipleField('Samedi Matin', choices=STRUCTURES)
     samedi_soir = SelectMultipleField('Samedi Soir', choices=STRUCTURES)
+    dimanche_matin = SelectMultipleField('Dimanche Matin', choices=STRUCTURES)
+    dimanche_soir = SelectMultipleField('Dimanche Soir', choices=STRUCTURES)
 
     submit = SubmitField('Valider le planning')
 
