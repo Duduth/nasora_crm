@@ -349,3 +349,77 @@ footer p {
         font-size: 1.1rem;
     }
 }
+/* Styles pour les cartes de statistiques */
+.stats-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stats-cards .card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.stats-cards .card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.stats-cards .card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+/* Styles pour les graphiques */
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.charts .chart-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.charts .chart-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* Styles pour les tableaux */
+.tables {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tables .table-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tables .table-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}

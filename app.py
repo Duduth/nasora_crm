@@ -16,9 +16,10 @@ import logging
 from models import Planning
 from forms import PlanningForm
 from models import db, User, Prospection, NovaPharmaProduct, GilbertProduct, EricFavreProduct, TroisCheneProduct, NovaPharmaSale, GilbertSale, EricFavreSale, TroisCheneSale
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'votre_cle_secrete'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'une_clé_secrète_très_complexe')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///plateforme_commerciale.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['DEBUG'] = False
