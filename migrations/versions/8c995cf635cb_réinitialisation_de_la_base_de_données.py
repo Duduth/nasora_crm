@@ -1,8 +1,8 @@
 """Réinitialisation de la base de données
 
-Revision ID: d17f804bdfd6
+Revision ID: 8c995cf635cb
 Revises: 
-Create Date: 2025-01-13 22:53:13.928123
+Create Date: 2025-01-17 16:00:04.719838
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'd17f804bdfd6'
+revision = '8c995cf635cb'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -120,8 +120,6 @@ def upgrade():
     sa.Column('vendredi_soir', sa.String(length=200), nullable=True),
     sa.Column('samedi_matin', sa.String(length=200), nullable=True),
     sa.Column('samedi_soir', sa.String(length=200), nullable=True),
-    sa.Column('dimanche_matin', sa.String(length=200), nullable=True),
-    sa.Column('dimanche_soir', sa.String(length=200), nullable=True),
     sa.ForeignKeyConstraint(['commercial_id'], ['user.id'], ),
     sa.PrimaryKeyConstraint('id')
     )

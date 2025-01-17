@@ -33,7 +33,8 @@ class PlanningForm(FlaskForm):
         ('CENTRE DE SANTE', 'CENTRE DE SANTE'),
         ('CLINIQUE', 'CLINIQUE'),
         ('SAPEUR POMPIER', 'SAPEUR POMPIER'),
-        ('GENDARMERIE', 'GENDARMERIE')
+        ('GENDARMERIES', 'GENDARMERIES'),
+        ('PHARMACIES', 'PHARMACIES'),
     ]
 
     # Champs pour chaque jour (matin et soir)
@@ -49,8 +50,6 @@ class PlanningForm(FlaskForm):
     vendredi_soir = SelectMultipleField('Vendredi Soir', choices=STRUCTURES)
     samedi_matin = SelectMultipleField('Samedi Matin', choices=STRUCTURES)
     samedi_soir = SelectMultipleField('Samedi Soir', choices=STRUCTURES)
-    dimanche_matin = SelectMultipleField('Dimanche Matin', choices=STRUCTURES)
-    dimanche_soir = SelectMultipleField('Dimanche Soir', choices=STRUCTURES)
 
     submit = SubmitField('Valider le planning')
 

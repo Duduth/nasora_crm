@@ -127,8 +127,6 @@ def saisie_planning():
             vendredi_soir=", ".join(request.form.getlist('vendredi_soir')),
             samedi_matin=", ".join(request.form.getlist('samedi_matin')),
             samedi_soir=", ".join(request.form.getlist('samedi_soir')),
-            dimanche_matin=", ".join(request.form.getlist('dimanche_matin')),
-            dimanche_soir=", ".join(request.form.getlist('dimanche_soir')),
         )
         db.session.add(nouveau_planning)
         db.session.commit()

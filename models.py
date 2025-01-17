@@ -44,8 +44,6 @@ class Planning(db.Model):
     vendredi_soir = db.Column(db.String(200), nullable=True)
     samedi_matin = db.Column(db.String(200), nullable=True)
     samedi_soir = db.Column(db.String(200), nullable=True)
-    dimanche_matin = db.Column(db.String(200), nullable=True)
-    dimanche_soir = db.Column(db.String(200), nullable=True)
 
     commercial = db.relationship('User', backref='plannings')
 
